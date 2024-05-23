@@ -1,0 +1,255 @@
+body{
+    background-color: hsl(230, 17%, 14%);
+    
+      color: hsl(0, 0%, 100%);
+      font-family: Arial, sans-serif;
+      transition: background-color 0.5s, color 0.5s;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    width: 75%;
+}
+
+.dark-mode{
+    display: flex;
+    gap: 15px;
+}
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: 4s;
+    transition: .4s;
+    background-color: rgb(234, 238, 241);
+}
+
+.slider:before{
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+.page-container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.total-followers{
+    display: flex;
+    gap: 20px;
+    padding: 60px;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    
+
+}
+.nathan-facebook,.nathan-twitter,
+.nathan-ig,
+.nathan-youtube{
+    border: 1px solid black;
+    flex: 1;
+    height: 160px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:  hsl(230, 17%, 14%);
+    font-size: 12px;
+   
+}
+.nathan-facebook,.nathan-twitter{
+    border-top: 3px solid blue;
+}
+.nathan-ig{
+    border-top: 3px solid rgb(221, 30, 135);
+}
+.nathan-youtube{
+    border-top: 3px solid brown;
+}
+.overview-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* border: 1px solid black; */
+    gap: 1rem;
+    width: 75%;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.page-views,.likes-facebook,.likes-ig,.profile-ig,.retweets,.likes-twitter,.likes-youtube,.views-youtube{
+    
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    height: 70px;
+    background-color: hsl(230, 17%, 14%);
+    
+}
+.facebook-1,.twitter-1,.ig-1,.youtube-1{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.container-page{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    font-size: 10px;
+
+}
+.logo-percentage{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 10px;
+    
+}
+.page-views{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.followers-no{
+    margin-top: 0px;
+    padding: 0px;
+
+}
+.attribution{
+    margin-top: 20px;
+}
+.followers-no{
+    font-size: 20px;
+    font-weight: bold;
+}
+.viewsNumber{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.overview{
+    width: 75%;
+    justify-content: space-between;
+    margin-left: 0px;
+    align-items: start;
+    display: flex;
+
+}
+.overview h2{
+    text-align: left;
+}
+
+.up-today{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    padding: 0px;
+    gap: 4px
+}
+.percentage-up,.percentage-down{
+    display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .total-followers{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0px;
+    }
+    .overview-main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+    .nathan-facebook,.nathan-twitter,
+.nathan-ig,
+.nathan-youtube{
+    width: 100%;
+    font-size: 30px;
+    margin-top: 25px;
+}
+.page-views,.likes-facebook,.likes-ig,.profile-ig,.retweets,.likes-twitter,.likes-youtube,.views-youtube{
+    width: 100%;
+    font-size: 30px;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.dark-mode{
+    border-top: 1px solid white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.overview{
+    width: 100%;
+    margin-top: 5px;
+}
+.attribution{
+    display: none;
+    margin-bottom: 20px;
+}
+}
