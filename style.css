@@ -1,11 +1,10 @@
-css
+
 
 body{
     background-color: hsl(230, 17%, 14%);
-    
       color: hsl(0, 0%, 100%);
       font-family: Arial, sans-serif;
-      transition: background-color 0.2s, color 0.2s;
+      transition: background-color 0.5s, color 0.5s;
 }
 
 
@@ -109,6 +108,7 @@ input:checked + .slider {
     text-align: center;
     background-color:  hsl(230, 17%, 14%);
     font-size: 12px;
+    background-color: hsl(228, 28%, 20%);
    
 }
 .nathan-facebook,.nathan-twitter{
@@ -137,7 +137,7 @@ input:checked + .slider {
     padding: 10px;
     border-radius: 5px;
     height: 90px;
-    background-color: hsl(230, 17%, 14%);
+    background-color: hsl(228, 28%, 20%);
     
 }
 .facebook-1,.twitter-1,.ig-1,.youtube-1{
