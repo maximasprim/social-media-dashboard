@@ -39,3 +39,51 @@ document.addEventListener('DOMContentLoaded', () => {
 
         
 })
+
+  //consuming the git api
+  let username = document.querySelector('.ig-username')
+  // Define the async function to fetch user data from GitHub
+async function fetchGitHubUserData(GITHUB_ACCESS_TOKEN) {
+  // GitHub API endpoint for fetching authenticated user details
+  const apiUrl = 'https://api.github.com/user';
+
+  try {
+      // Fetch user details from GitHub API
+      const response = await fetch(apiUrl, {
+          headers: {
+              'Authorization': `token ${GITHUB_ACCESS_TOKEN}`
+          }
+      });
+
+      // Check if the response is ok (status code 200)
+      if (!response.ok) {
+          throw new Error(`Error: ${response.status} ${response.statusText}`);
+      }
+
+      // Parse the JSON response
+      const data = await response.json();
+
+      // Extract the user's name and follower count
+      const userName = data.login;
+      const followerCount = data.followers;
+
+      // Display the user's name and follower count
+      username.innerHTML = `@${userName}`
+      console.log(`GitHub Username: ${userName}`);
+      console.log(`GitHub Followers: ${followerCount}`);
+
+      
+
+      // Optionally, return the data if needed elsewhere
+      return { userName, followerCount };
+  } catch (error) {
+      // Handle errors
+      console.error('Error fetching GitHub user details:', error);
+  }
+}
+
+// Call the function with your GitHub personal access token
+// const accessToken = 'YOUR_ACCESS_TOKEN';
+fetchGitHubUserData(GITHUB_ACCESS_TOKEN);
+
+
