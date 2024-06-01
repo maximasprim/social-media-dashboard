@@ -101,6 +101,9 @@ fetchGitHubUserData(GITHUB_ACCESS_TOKEN);
 
 const FACEBOOK_ACCESS_TOKEN = 'EAAVjlNwVHVIBOxOQzWS7nZBNuiElZCKSjNrJo4SsIMDfW5Dj4vphfCyDIE0Np6ii7YpnLOt8UZCPgav1l8jQ2zOZAEZCZCtVMuSlIq4k22K6U6IGZBBKDkDItka8nwUeZBMtuJg9MjQco4veezPD4X4bmdn5ds0zOtHs30Wr8642fcneZCTxKHxRzZAZAAgVq14ZCFxcfEH4I1uHXYLFJ56J65g1dLNZAtA1L7f4sPIgDZBT3waAxMQJDrLa6TyNZAhBwJc3wZDZD';
 const GITHUB_ACCESS_TOKEN = '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';
+require('dotenv').config();
+
+const apiKey = process.env.API_KEY;
 
 //     const TWITTER_BEARER_TOKEN = 'your_twitter_bearer_token';
 
