@@ -1,0 +1,37 @@
+{
+    "overview": [
+      {
+        "title": "Page Views",
+        "platform": "Facebook",
+        "icon": "./images/icon-facebook.svg",
+        "number": "87",
+        "change": "3%"
+      },
+      {
+        "title": "Likes",
+        "platform": "Facebook",
+        "icon": "./images/icon-facebook.svg",
+        "number": "52",
+        "change": "-2%"
+      },
+      
+    ],
+    "dashboard": [
+      {
+        "platform": "Facebook",
+        "icon": "./images/icon-facebook.svg",
+        "username": "@nathanf",
+        "followers": "1987",
+        "change": "12 Today"
+      },
+      {
+        "platform": "Twitter",
+        "icon": "./images/icon-twitter.svg",
+        "username": "@nathanf",
+        "followers": "1044",
+        "change": "99 Today"
+      },
+      // Add more dashboard data as needed
+    ]
+  }
+  

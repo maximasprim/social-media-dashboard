@@ -1,9 +1,11 @@
+css
+
 body{
     background-color: hsl(230, 17%, 14%);
     
       color: hsl(0, 0%, 100%);
       font-family: Arial, sans-serif;
-      transition: background-color 0.5s, color 0.5s;
+      transition: background-color 0.2s, color 0.2s;
 }
 
 
@@ -12,7 +14,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 0px;
-    width: 75%;
+    width: 90%;
 }
 
 .dark-mode{
@@ -59,7 +61,7 @@ body{
 }
 
 input:checked + .slider {
-    background-color: #2196F3;
+    background-color: #19ffec;
   }
   
   input:focus + .slider {
@@ -92,16 +94,15 @@ input:checked + .slider {
     padding: 60px;
     align-items: center;
     justify-content: center;
-    width: 75%;
+    width: 90%;
     
 
 }
 .nathan-facebook,.nathan-twitter,
 .nathan-ig,
 .nathan-youtube{
-    border: 1px solid black;
     flex: 1;
-    height: 160px;
+    height: 220px;
     border-radius: 5px;
     justify-content: center;
     align-items: center;
@@ -111,7 +112,7 @@ input:checked + .slider {
    
 }
 .nathan-facebook,.nathan-twitter{
-    border-top: 3px solid blue;
+    border-top: 3px solid rgb(0, 195, 255);
 }
 .nathan-ig{
     border-top: 3px solid rgb(221, 30, 135);
@@ -125,7 +126,7 @@ input:checked + .slider {
     grid-template-rows: 1fr 1fr;
     /* border: 1px solid black; */
     gap: 1rem;
-    width: 75%;
+    width: 90%;
     justify-content: space-evenly;
     align-items: center;
 
@@ -133,10 +134,9 @@ input:checked + .slider {
 
 .page-views,.likes-facebook,.likes-ig,.profile-ig,.retweets,.likes-twitter,.likes-youtube,.views-youtube{
     
-    border: 1px solid black;
     padding: 10px;
     border-radius: 5px;
-    height: 70px;
+    height: 90px;
     background-color: hsl(230, 17%, 14%);
     
 }
@@ -156,8 +156,10 @@ input:checked + .slider {
 .logo-percentage{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 35px;
     font-size: 10px;
+    justify-content: space-between;
+    align-items: center;
     
 }
 .page-views{
@@ -171,19 +173,25 @@ input:checked + .slider {
 
 }
 .attribution{
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .followers-no{
-    font-size: 20px;
+    /* font-size: 35px; */
     font-weight: bold;
+    margin-top: 0px;
+    
+}
+
+.followers-no p{
+    font-size: 35px;
 }
 .viewsNumber{
-    font-size: 16px;
+    font-size: 22px;
     font-weight: bold;
 }
 
 .overview{
-    width: 75%;
+    width: 90%;
     justify-content: space-between;
     margin-left: 0px;
     align-items: start;
@@ -200,7 +208,8 @@ input:checked + .slider {
     align-items: center;
     margin-top: 0px;
     padding: 0px;
-    gap: 4px
+    gap: 4px;
+    
 }
 .percentage-up,.percentage-down{
     display: flex;
