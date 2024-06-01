@@ -103,7 +103,7 @@ const FACEBOOK_ACCESS_TOKEN = 'EAAVjlNwVHVIBOxOQzWS7nZBNuiElZCKSjNrJo4SsIMDfW5Dj
 const GITHUB_ACCESS_TOKEN = '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';
 require('dotenv').config();
 
-const apiKey = process.env.API_KEY;
+// const apiKey = process.env.API_KEY;
 
 //     const TWITTER_BEARER_TOKEN = 'your_twitter_bearer_token';
 
